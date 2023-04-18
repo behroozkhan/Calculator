@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+body {
+  background: linear-gradient(45deg, #465297, #1f242b, #3a4452);
+}
+
+/* outside styling */
+.calculator {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.heading {
+  display: flex;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #6fabc7;
+  padding: 5px;
+  position: relative;
+}
+
+/* this is the main container of calcultor every icnons,button etc inside this main container */
+.main-conatiner {
+  height: 465px;
+  width: 250px;
+  border-radius: 18px;
+  border: 1px solid #717377;
+  position: relative;
+  align-self: center;
+  background: transparent;
+  box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+}
+
+/* this inside .main-conatiner top bar icons */
+.status-bar {
+  position: absolute;
+  height: auto;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  border-bottom: 1px solid rgb(107, 104, 104);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 13px;
+}
+
+.status-bar .time {
+  margin: 7px 12px;
+  font-size: 11px;
+  color: #918f8f;
+}
+
+.icon {
+  margin: 5px 7px;
+  color: #918f8f;
+}
+
+.icon .fa-wifi {
+  margin: 2px;
+}
+
+/* this is .main-conatiner taskbar section lower of .status-bar */
+.taskabr {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0px 39px 10px;
+  color: #918f8f;
+}
+
+.taskabr .fas {
+  font-size: 11px;
+}
+
+.a-taskbar {
+  width: 15%;
+  margin-top: -4px;
+}
+
+.a-taskbar .fa-exchange-alt {
+  margin: 5px;
+}
+
+
+/* this is input area inside .main-conatiner */
+.input-value {
+  display: flex;
+  justify-content: end;
+  box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1);
+}
+
+
+.input-value input[type="text"] {
+  text-align: right;
+  border: none;
+  outline: 0px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ECECEC;
+  background: transparent;
+}
+
+/* mid taskbar clock delete round */
+
+.main-mid-taskbar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 39px;
+  margin-bottom: 10px;
+
+}
+
+.mid-taskbar {
+  display: flex;
+  padding: 2px;
+  margin-left: 7px;
+  color: #918f8f;
+}
+
+.arrow {
+  margin-left: 10px;
+}
+
+.back-space {
+  display: flex;
+  text-align: end;
+  margin-right: 8px;
+  color: #6fabc7;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  width: 231px;
+  margin-left: 8px;
+  border: 1px solid #444343;
+  height: 0px;
+  margin-bottom: 10px;
+}
+
+/* this is btn container styling area */
+.calculator-btn {
+
+  width: 100%;
+}
+
+/* decleare btn styling */
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+}
+
+/* btns layout */
+.btn .btn-layout {
+  width: 50px;
+  height: 42px;
+  margin: 5px 5px 0px 2px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: #ffffff;
+  font-size: 20px;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+/* this is btn color change just few */
+.btn-layout.color {
+  color: #6fabc7;
+}
+
+#clear {
+  color: #FF6D6D;
+}
+
+/* this is bottom hr line styling */
+.line-two {
+  display: flex;
+  width: 125px;
+  height: 3px;
+  margin-top: -10px;
+  background: #c4c0c0;
+  border-radius: 4px;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+}
